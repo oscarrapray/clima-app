@@ -26,7 +26,7 @@ const App = () => {
           if(consulta) {   
             const respuesta = await axios.get(url);
             const result =  respuesta.data;
-            //console.log(respuesta)
+            console.log(respuesta.data)
     
             setResultado(result);
             setConsulta(false);
